@@ -1,0 +1,92 @@
+body {
+    background-color:#eaeaea;
+    overflow-x: hidden;
+
+}
+.parent {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.8fr 1.6fr 0.6fr;
+    gap: 5px 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . . . ."
+      ". . . . ."
+      ". . . . .";
+  }
+  
+h1 {
+    color: navy;
+    align-self: start;
+    margin-left: 20px;
+}
+.Navigation{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    display: flex;
+    align-items: center;
+    align-self: start;
+}
+.Räume{
+    margin-left: 90px;
+}
+.Produkte{
+    margin-left: 40px;
+}
+.Favoriten{
+    margin-left: 40px;
+}
+.Login{
+    margin-right: 560px;
+}
+.Entdecken{
+    grid-column-start: 6;
+    grid-column-end: 11;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    align-items: center;
+    display: table-column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr;
+         
+}
+.Bilder{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-template-columns: 2fr;
+    display: grid;
+    align-items: center;
+}
+.Benq-Monitorlampe{
+    scale: 70%;
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+.Anker-Cube{
+    scale: 40%;
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+.Highlights{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+.Neu{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+.Footer{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    align-self: start
+}
