@@ -20,14 +20,17 @@
             <div class="Favoriten">
                 <h2>Favoriten</h2>
             </div>
-            <div class="Login"> </div>
-                <h2>Login</h2>
-        </div>
+            <div class="Login">
+            </div>
+                <a href="indexlogin.html"><h2>Login</h2></a>                
+            </div>
+            <script src="script.js"></script> 
+            <div class="Logout">
+                <button class="logout-btn" type="submit" onclick="logoutfunction()" name="Logout">Logout</button>
+            </div>
         <div class="Entdecken">             
-                <div class="Bilder">
-                    <a href="index2.html">
-                    <img class="Benq-Monitorlampe" src="asset/benq_monitorlampe.jpg" alt="Benq-Monitorlampe">
-                    </a>
+                <div class="Bilder">                   
+                    <img class="Benq-Monitorlampe" onclick="useLogin()" src="asset/benq_monitorlampe.jpg" alt="Benq-Monitorlampe">                   
                     <img class="Anker-Cube" src="asset/anker_aufladecube.jpg" alt="Anker-Cube">
                 </div>
                 <div class="Highlights">
@@ -35,7 +38,12 @@
                 </div>
                 <div class="Neu">
                     <h2>Neue Produkte</h2>
-                </div>
+                </div>          
+            <div>
+                <input type="email" name="newsletterInput" id="newsletterInput" placeholder="Deine E-Mail eingeben">
+                <button type="submit" onclick="newsletterfunction()" name="Abbonieren">Abbonieren</button>
+                <h3 id="result"></h3>
+            </div>     
         </div>  
         <div class="Footer">
             <h3>Impressum</h3>
